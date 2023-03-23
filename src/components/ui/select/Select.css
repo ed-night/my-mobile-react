@@ -1,0 +1,63 @@
+.custom-select {
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  color: var(--main);
+}
+
+.custom-option {
+  padding: 8px 5px;
+}
+
+.custom-options>div {
+  padding: 8px 0;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.arrow svg {
+  height: 8px;
+}
+
+.selected-option {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  padding: 4px 7px;
+  border-radius: 8px;
+}
+
+.custom-select.expanded .selected-option {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.custom-options {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: var(--bg-second);
+  min-width: 80px;
+  top: calc(100% + 10px);
+  padding: 0;
+}
+
+.opt:hover {
+  background-color: var(--main-hover);
+}
+
+.custom-select.expanded .custom-options {
+  display: flex;
+}
+
+.custom-select.expanded .arrow svg {
+  transform: rotate(180deg);
+}

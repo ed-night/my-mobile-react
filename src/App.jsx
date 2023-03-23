@@ -17,6 +17,16 @@ const App = () => {
     if (prefersDarkTheme) {
       setTheme(Themes.dark);
     }
+
+    document.body.addEventListener('click', (e) => {
+      const target = e.target;
+      const expandedSelectCmp = document.querySelector('.custom-select.expanded');
+      if (expandedSelectCmp) {
+        if (!(expandedSelectCmp === target || expandedSelectCmp.contains(target))) {
+          expandedSelectCmp.classList.remove('expanded');
+        };
+      }
+    })
   }, []);
 
   useEffect(() => {

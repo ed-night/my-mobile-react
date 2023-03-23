@@ -1,8 +1,13 @@
 :root {
-    --bgc-col: #ffffff;
-    --logo-my-color: #ff8800;
-    --logo-mobile-color: #23272f;
-    /* --bgc-hover: #C3C2C8; */
-    --bgc-card: #edededa0;
-    --filters-color: #3C3C3C;
+  --bg-main: #fff;
+  --main: #111;
+  --main-hover: #edededa0;
+  --action: #219ebc;
+  --bg-second: #edededa0;
+  --second: #ff8800;
+  --border-main: var(--main);
+  --border-second: #7e7e7e8b;
+  --input-inactive-border: #888888;
+  --search: #78839b33;
+  --search-placeholder: var(--input-inactive-border);
 }
