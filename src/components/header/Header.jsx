@@ -69,7 +69,7 @@ const Header = () => {
             </div>
           </div>
           <Select options={['AM', 'EN']}/>
-          <Select options={['AM', 'EN']}/>
+          <Select options={['AMD', 'USD']}/>
           <div className="theme">
             <input className="toggle-theme" type="checkbox" id="theme" name="theme" checked={theme === Themes.dark} onChange={(e) => {
               if (e.target.checked) {
